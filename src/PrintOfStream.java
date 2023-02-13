@@ -11,18 +11,12 @@ public class PrintOfStream {
 
     }
 
-    public static void main(String[] args) throws IOException {
-        //byte[] origin = {1, 2, 3, 4};
-        InputStream inputStream = new ByteArrayInputStream(new byte[] {1, 2, 3, 4, -5});
-        //int ans = print(inputStream);
-        //System.out.println(ans);
-    }
 
     static void print(InputStream inputStream, OutputStream outputStream) throws IOException {
-        int b = 0;
+        int b;
         //int sum = 0;
         try {
-            while((b = inputStream.read()) != -1) {
+            while ((b = inputStream.read()) != -1) {
                 //sum += (byte) b;
                 if ((byte) b % 2 == 0) {
                     outputStream.write((byte) b);

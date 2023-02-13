@@ -1,10 +1,19 @@
-import javax.swing.*;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+/*
+Задача 4.3.7
+Напишите программу, читающую текст из System.in и выводящую в System.out сумму всех встреченных в тексте вещественных
+чисел с точностью до шестого знака после запятой. Числом считается последовательность символов, отделенная от
+окружающего текста пробелами или переводами строк и успешно разбираемая методом Double.parseDouble.
+На этот раз вам надо написать программу полностью, т.е. объявить  публичный класс с именем Main  и точку входа
+в программу — метод  main. И добавить все необходимые импорты
+ */
+
+import java.io.*;
+import java.nio.*;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
     }
 
